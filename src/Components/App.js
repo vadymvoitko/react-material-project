@@ -1,13 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import { Header, Footer } from "./Layouts";
+import Exercises from './Exercises'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hi from React</h1>
-    </div>
-  );
+export default class extends Component {
+ render() {
+   return <>
+    <Header/>
+    <Exercises/>
+    <Footer/>
+   </>
+ }
 }
 
-export default App;
+

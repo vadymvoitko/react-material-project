@@ -1,2 +1,6 @@
-export { default as Header } from './Header.js'
-export { default as Footer } from './Footer.js'
+import React from 'react'
+
+export default props =>
+  <div>
+    <h1>Exercises</h1>
+  </div>
