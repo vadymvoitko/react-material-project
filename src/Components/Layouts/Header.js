@@ -1,6 +1,23 @@
 import React from 'react';
+import Typography from "@material-ui/core/Typography";
+import Toolbar from "@material-ui/core/Toolbar";
+import AppBar from "@material-ui/core/AppBar";
+import CreateDialog from "../Exercises/CreateDialog";
+import {withStyles} from "@material-ui/core";
 
-export default props =>
-  <div className="App">
-    <h1>Header</h1>
-  </div>
+const styles = {
+  flex: {
+    flex: 1
+  }
+}
+export default withStyles(styles)(
+  ({classes}) =>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography className={classes.flex}>
+          Exercise Database
+        </Typography>
+        <CreateDialog/>
+      </Toolbar>
+    </AppBar>
+)
