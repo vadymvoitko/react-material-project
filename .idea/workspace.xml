@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e07dfac-d82b-42e2-9201-b48ff277f230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Exercises/CreateDialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Exercises/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Exercises/LeftPane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Exercises/RightPane.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Exercises/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layouts/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layouts/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layouts/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -187,6 +173,11 @@
               <item name="react-material" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-material" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-material" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-material" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -256,7 +247,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563562042139</updated>
-      <workItem from="1563562044950" duration="42422000" />
+      <workItem from="1563562044950" duration="43065000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1563598465912</created>
@@ -265,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563598465914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ready">
+      <created>1564842802715</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564842802715</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42422000" />
+    <option name="totallyTimeSpent" value="43065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -279,8 +277,8 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23510723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" weight="0.35434175" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32913166" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.35434175" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
@@ -299,7 +297,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
