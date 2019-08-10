@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import {withWidth} from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
-import {withContext} from "../../context";
+import { context } from "./../../context"
 
-export default withContext(withWidth()(
-  ({ muscles, category, onSelectCategory, width }) => {
+export default withWidth()(
+  () => {
+    const { muscles, category, onSelectCategory, width } = useContext(context);
     const index = category
       ? muscles.findIndex(group => group === category) + 1
       : 0
@@ -33,4 +34,4 @@ export default withContext(withWidth()(
       </Tabs>
     </AppBar>
   }
-))
+)

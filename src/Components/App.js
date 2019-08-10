@@ -1,26 +1,24 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import { Header, Footer } from "./Layouts";
 import Exercises from './Exercises'
-import { exercises, muscles } from "../store";
+import { exercises as exercisesInitial, muscles } from "../store";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Provider } from "./../context";
 
+export default () => {
+  const [exercises, setExercises] = useState(exercisesInitial);
+  const [exercise, setExercise] = useState({});
+  const [editMode, setEditMode] = useState(false);
+  const [category, setCategory] = useState('');
 
-export default class extends Component {
-  state = {
-    exercises,
-    exercise: {},
-    editMode: false,
-    category: ''
-  }
-  getExercisesByMuscles() {
+  const getExercisesByMuscles = () => {
     const groups = muscles.reduce((groups, muscle) => {
-        groups[muscle] = [];
-        return groups
-      }, {})
+      groups[muscle] = [];
+      return groups
+    }, {})
 
     return Object.entries(
-      this.state.exercises.reduce((exercises, exercise) => {
+      exercises.reduce((exercises, exercise) => {
         const { muscles } = exercise
 
         exercises[muscles] = exercises[muscles]
@@ -30,77 +28,60 @@ export default class extends Component {
       }, groups)
     )
   }
-  onSelectCategory = category => {
-    this.setState({
-      category
-    })
+  const onSelectCategory = newCategory => {
+    setCategory(newCategory)
   }
 
-  onSelectExercise = id => {
-    this.setState(({exercises}) => ({
-      exercise: exercises.find(ex => ex.id === id),
-      editMode: false,
-    }))
+  const onSelectExercise = id => {
+    setExercise(exercises.find(ex => ex.id === id));
+    setEditMode(false);
   }
 
-  onCreateExercise = ex => {
-    this.setState(({ exercises }) => {
-      exercises.push(ex);
-      return {
-        exercises,
-      }
-    })
+  const onCreateExercise = ex => {
+    setExercises([...exercises, ex]);
   }
 
-  onSelectEdit = id => {
-    this.setState(({exercises}) => ({
-      exercise: exercises.find(ex => ex.id === id),
-      editMode: true
-    }))
+  const onSelectEdit = id => {
+    setExercise(exercises.find(ex => ex.id === id));
+    setEditMode(true);
   }
 
-  onDeleteExercise = id => {
-    this.setState(({ exercises, exercise, editMode }) => ({
-      exercises: exercises.filter(ex => ex.id !== id),
-      editMode: exercise.id === id ? false : editMode,
-      exercise: exercise.id === id ? {} : exercise
-    }))
+  const onDeleteExercise = id => {
+    setExercises(exercises.filter(ex => ex.id !== id));
+    setEditMode(exercise.id === id ? false : editMode);
+    setExercise(exercise.id === id ? {} : exercise);
   }
 
-  onEditExercise = exercise => {
-    this.setState(({ exercises }) => ({
-      exercises: [
-        ...exercises.filter(ex => ex.id !== exercise.id),
-        exercise
-      ],
-      exercise,
-      editMode: false
-    }))
+  const onEditExercise = editedExercise => {
+    setExercises([
+      ...exercises.filter(ex => ex.id !== editedExercise.id),
+      editedExercise
+    ]);
+    setEditMode(false);
+    setExercise(editedExercise);
   }
 
-  getContext = () => {
+  const getContext = () => {
     return {
-      ...this.state,
       muscles,
-      onCreate: this.onCreateExercise,
-      exercises: this.getExercisesByMuscles(),
-      onSelect: this.onSelectExercise,
-      onDeleteExercise: this.onDeleteExercise,
-      onSelectEdit: this.onSelectEdit,
-      onSelectCategory: this.onSelectCategory,
-      onEditExercise: this.onEditExercise
+      exercise,
+      editMode,
+      category,
+      onCreate: onCreateExercise,
+      exercises: getExercisesByMuscles(),
+      onSelect: onSelectExercise,
+      onDeleteExercise: onDeleteExercise,
+      onSelectEdit: onSelectEdit,
+      onSelectCategory: onSelectCategory,
+      onEditExercise: onEditExercise
     }
   }
 
- render() {
-  // CssBaseline is to refuse browsers to set their own margins to root elems
-   return <Provider value={this.getContext()}>
-     <CssBaseline/>
-     <Header/>
-     <Exercises/>
-     <Footer/>
-   </Provider>
- }
+  return <Provider value={getContext()}>
+    <CssBaseline/>
+    <Header/>
+    <Exercises/>
+    <Footer/>
+  </Provider>
 }
-
 
