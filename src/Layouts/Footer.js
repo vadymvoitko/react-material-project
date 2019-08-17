@@ -3,17 +3,20 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import {withWidth} from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
-import { context } from "./../../context"
+import { context } from "../__service__/context"
+import {selectCategory} from "../Exercises/actionCreators";
 
 export default withWidth()(
   () => {
-    const { muscles, category, onSelectCategory, width } = useContext(context);
+    const { state, dispatch, width } = useContext(context);
+    const { category, muscles } = state.exercise;
+
     const index = category
       ? muscles.findIndex(group => group === category) + 1
       : 0
 
     const onIndexSelect = (e, index) =>
-      onSelectCategory(index === 0 ? '' : muscles[index - 1])
+      dispatch(selectCategory(index))
 
     return <AppBar position='static'>
       <Tabs

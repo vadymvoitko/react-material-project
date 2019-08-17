@@ -7,8 +7,9 @@ import { Add } from '@material-ui/icons';
 import Fab from "@material-ui/core/Fab";
 import Form from "./Form";
 import { withStyles } from "@material-ui/core";
-import { context } from "./../../context"
+import { context } from "../__service__/context"
 import { compose } from "recompose";
+import {createExercise} from "./actionCreators";
 
 const useStyles = theme => ({
   root: {
@@ -18,7 +19,7 @@ const useStyles = theme => ({
 
 const CreateDialog = (classes) => {
   const [open, setOpen] = useState(false);
-  const { onCreate } = useContext(context);
+  const { dispatch } = useContext(context)
   const onHandleToggle = () => {
     setOpen(!open)
   }
@@ -51,7 +52,7 @@ const CreateDialog = (classes) => {
           Please fill out the form below
         </DialogContentText>
         <Form
-          onSubmitExercise={onCreate}
+          onSubmitExercise={(ev) => dispatch(createExercise(ev))}
           onCloseForm={onCloseForm}
         />
       </DialogContent>
