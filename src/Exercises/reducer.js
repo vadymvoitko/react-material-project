@@ -1,30 +1,38 @@
+import {
+  CREATE_EXERCISE,
+  RESET_EXERCISE_BY_ID,
+  SELECT_CATEGORY,
+  SET_EDIT_MODE,
+  SET_EXERCISE,
+  SET_EXERCISES
+} from "./constants";
+
 const exercise = (state = {}, action) => {
-  console.log(state);
   switch (action.type) {
-    case "createExercise": return {
+    case CREATE_EXERCISE: return {
       ...state,
       exercises: [ ...state.exercises, action.payload ]
     };
-    case "setExercise": return {
+    case SET_EXERCISE: return {
       ...state,
       exercise: action.payload
     };
-    case "setExercises": return {
+    case SET_EXERCISES: return {
       ...state,
       exercises: action.payload
     };
-    case "setEditMode": return {
+    case SET_EDIT_MODE: return {
       ...state,
       editMode: action.payload
     };
-    case "resetExerciseById": return {
+    case RESET_EXERCISE_BY_ID: return {
       ...state,
       ...(exercise.id === action.payload ? { exercise: {
           title: 'Welcome',
           description: 'Please select the exercise from list on the left'
         }} : {})
     };
-    case "selectCategory": return {
+    case SELECT_CATEGORY: return {
       ...state,
       category: state.muscles[action.payload - 1]
     };

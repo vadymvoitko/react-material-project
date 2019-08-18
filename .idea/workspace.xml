@@ -2,30 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e07dfac-d82b-42e2-9201-b48ff277f230" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Exercises/actionCreators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exercises/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__service__/CustomProvider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__service__/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exercises/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Layouts/actionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Layouts/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Layouts/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/CreateDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/CreateDialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/LeftPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/LeftPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/RightPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/RightPane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Exercises/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layouts/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/context.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/CreateDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/CreateDialog/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/CommonComponents/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/LeftPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/LeftPane/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/RightPane.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/RIghtPane/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Exercises/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layouts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/styles/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/__tests__/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/CustomProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/CustomProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__service__/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__service__/storeValues.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,84 +37,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/__service__/CustomProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Layouts/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/__service__/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercises/CreateDialog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercises/Form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exercises/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="196">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#141#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercises/actionCreators.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/Exercises/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercises/LeftPane.js">
+        <entry file="file://$PROJECT_DIR$/src/Exercises/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="-363">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Exercises/LeftPane/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -125,10 +79,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Exercises/RightPane.js">
+        <entry file="file://$PROJECT_DIR$/src/Exercises/RIghtPane/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="136">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -136,14 +90,53 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Layouts/CreateDialog/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/__service__/context.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__service__/CustomProvider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__service__/styles/index.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__service__/logo.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stop</find>
-      <find>closeForm</find>
-      <find>propT</find>
-      <find>Paper</find>
       <find>root</find>
       <find>withContext</find>
       <find>onSubmitExercise</find>
@@ -166,10 +159,14 @@
       <find>muscles</find>
       <find>category</find>
       <find>getExercisesByMuscles</find>
-      <find>onSelectCategory</find>
       <find>setExercise</find>
       <find>title</find>
       <find>editMode</find>
+      <find>onSelectCategory</find>
+      <find>&lt;Form</find>
+      <find>&lt;Crea</find>
+      <find>index</find>
+      <find>LeftPane.</find>
     </findStrings>
     <replaceStrings>
       <replace>onCreateExercise</replace>
@@ -212,16 +209,24 @@
         <option value="$PROJECT_DIR$/src/Components/App.js" />
         <option value="$PROJECT_DIR$/src/__service__/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/__service__/rootReducer.js" />
-        <option value="$PROJECT_DIR$/src/Exercises/CreateDialog.js" />
-        <option value="$PROJECT_DIR$/src/__service__/CustomProvider.js" />
         <option value="$PROJECT_DIR$/src/Exercises/Form.js" />
-        <option value="$PROJECT_DIR$/src/Exercises/reducer.js" />
         <option value="$PROJECT_DIR$/src/Layouts/Footer.js" />
         <option value="$PROJECT_DIR$/src/Exercises/RightPane.js" />
         <option value="$PROJECT_DIR$/src/Exercises/LeftPane.js" />
-        <option value="$PROJECT_DIR$/src/Exercises/actionCreators.js" />
         <option value="$PROJECT_DIR$/src/__service__/App.js" />
+        <option value="$PROJECT_DIR$/src/__service__/CustomProvider.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/CreateDialog.js" />
+        <option value="$PROJECT_DIR$/src/__service__/rootReducer.js" />
+        <option value="$PROJECT_DIR$/src/Layouts/constants.js" />
+        <option value="$PROJECT_DIR$/src/Layouts/actionCreators.js" />
+        <option value="$PROJECT_DIR$/src/Layouts/reducer.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/constants.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/actionCreators.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/reducer.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/index.js" />
+        <option value="$PROJECT_DIR$/src/Exercises/RIghtPane/index.js" />
+        <option value="$PROJECT_DIR$/src/Layouts/CreateDialog/index.js" />
+        <option value="$PROJECT_DIR$/src/__service__/context.js" />
       </list>
     </option>
   </component>
@@ -265,12 +270,6 @@
               <item name="react-material" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-material" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Exercises" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-material" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-material" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -282,7 +281,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/Exercises" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Layouts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -296,13 +295,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/__service__" />
-      <recent name="$PROJECT_DIR$/src/Exercises" />
-      <recent name="$PROJECT_DIR$/src/service" />
-      <recent name="$PROJECT_DIR$/src/Components/Exercises" />
+      <recent name="$PROJECT_DIR$/src/__service__/__tests__" />
+      <recent name="$PROJECT_DIR$/src/__service__/styles" />
+      <recent name="$PROJECT_DIR$/src/Layouts/CreateDialog" />
+      <recent name="$PROJECT_DIR$/src/Layouts/Footer" />
+      <recent name="$PROJECT_DIR$/src/Layouts/Header" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Layouts" />
       <recent name="$PROJECT_DIR$/src/Components/Exercises" />
       <recent name="$PROJECT_DIR$/src/Components/Layouts" />
     </key>
@@ -367,17 +367,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565441938465</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new structure implemented useReducer combineReducer no refactor">
+      <created>1566062007373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566062007373</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69129000" />
+    <option name="totallyTimeSpent" value="71242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23510723" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23510723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -390,7 +397,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.35434175" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2507003" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2507003" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -404,7 +411,8 @@
     <MESSAGE value="first" />
     <MESSAGE value="ready" />
     <MESSAGE value="used hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="used hooks" />
+    <MESSAGE value="new structure implemented useReducer combineReducer no refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="new structure implemented useReducer combineReducer no refactor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -414,7 +422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__service__/App.test.js">
+    <entry file="file://$PROJECT_DIR$/src/__service__/__tests__/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -422,9 +430,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__service__/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Layouts/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -481,26 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__service__/context.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__service__/rootReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -511,34 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/__service__/CustomProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Layouts/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Layouts/Footer.js">
+    <entry file="file://$PROJECT_DIR$/src/Layouts/Footer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
@@ -548,52 +506,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/LeftPane.js">
+    <entry file="file://$PROJECT_DIR$/src/__service__/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="105">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/RightPane.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/actionCreators.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Exercises/CreateDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,6 +523,134 @@
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layouts/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layouts/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layouts/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layouts/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__service__/CommonComponents/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/LeftPane/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exercises/RIghtPane/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Layouts/CreateDialog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__service__/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__service__/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__service__/CustomProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__service__/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>

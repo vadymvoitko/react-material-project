@@ -1,9 +1,9 @@
-import React from "react";
 import { createContext } from "react";
 
 export const context = createContext();
-export const { Provider, Consumer } = context;
+export const { Provider } = context;
 
-export const withContext = Component => props => <Consumer>{
-  value => <Component {...value} {...props}/>
-}</Consumer>
+// HOC for usage instead of children props
+// export const withContext = Component => props => <Consumer>{
+//   value => <Component {...value} {...props}/>
+// }</Consumer>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './__service__/index.css';
+import './__service__/styles/index.css';
 import App from './__service__/App';
 import * as serviceWorker from './__service__/serviceWorker';
 import { ThemeProvider } from '@material-ui/styles';

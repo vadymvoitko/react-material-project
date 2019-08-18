@@ -2,9 +2,9 @@ import React, {useContext} from 'react'
 import Paper from "@material-ui/core/Paper";
 import {Typography} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
-import Form from "./Form";
-import { context } from "../__service__/context";
-import {setEditMode, setExercise, setExercises} from "./actionCreators";
+import Form from "../../__service__/CommonComponents/Form";
+import { context } from "../../__service__/context";
+import {setEditMode, setExercise, setExercises} from "../actionCreators";
 
 export default ({ classes }) => {
 

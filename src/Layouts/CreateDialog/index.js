@@ -1,15 +1,16 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Dialog from "@material-ui/core/Dialog";
 import { Add } from '@material-ui/icons';
 import Fab from "@material-ui/core/Fab";
-import Form from "./Form";
+import Form from "../../__service__/CommonComponents/Form";
 import { withStyles } from "@material-ui/core";
-import { context } from "../__service__/context"
+import { context } from "../../__service__/context"
 import { compose } from "recompose";
-import {createExercise} from "./actionCreators";
+import {createExercise} from "../../Exercises/actionCreators";
+import {setDialogOpen} from "../actionCreators";
 
 const useStyles = theme => ({
   root: {
@@ -18,13 +19,13 @@ const useStyles = theme => ({
 });
 
 const CreateDialog = (classes) => {
-  const [open, setOpen] = useState(false);
-  const { dispatch } = useContext(context)
+  const { state, dispatch } = useContext(context)
+  const { isDialogOpen } = state.layout;
   const onHandleToggle = () => {
-    setOpen(!open)
+    dispatch(setDialogOpen(!isDialogOpen))
   }
   const onCloseForm = () => {
-    setOpen(false)
+    dispatch(setDialogOpen(false))
   }
   return <>
     <Fab
@@ -39,7 +40,7 @@ const CreateDialog = (classes) => {
       classes={{
         paper: classes.root,
       }}
-      open={open}
+      open={isDialogOpen}
       onClose={onHandleToggle}
       fullWidth={true}
       maxWidth={"xs"}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Grid from "@material-ui/core/Grid";
-import RightPane from "./RightPane";
+import RightPane from "./RIghtPane";
 import LeftPane from "./LeftPane";
 import {withStyles} from "@material-ui/core";
 

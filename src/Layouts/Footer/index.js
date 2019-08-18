@@ -3,8 +3,8 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import {withWidth} from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
-import { context } from "../__service__/context"
-import {selectCategory} from "../Exercises/actionCreators";
+import { context } from "../../__service__/context"
+import {selectCategory} from "../../Exercises/actionCreators";
 
 export default withWidth()(
   () => {

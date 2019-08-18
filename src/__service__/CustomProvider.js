@@ -13,6 +13,9 @@ const initState = {
     },
     editMode: false,
     muscles,
+  },
+  layout: {
+    isDialogOpen: false
   }
 }
 const CustomProvider = props => {

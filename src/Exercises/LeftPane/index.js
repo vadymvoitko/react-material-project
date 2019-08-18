@@ -6,8 +6,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItem from "@material-ui/core/ListItem";
 import {DeleteForever, Edit} from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
-import { context } from "../__service__/context";
-import {resetExerciseById, setEditMode, setExercise, setExercises} from "./actionCreators";
+import { context } from "../../__service__/context";
+import {resetExerciseById, setEditMode, setExercise, setExercises} from "../actionCreators";
 
 export default ({ classes }) => {
   const { state, dispatch } = useContext(context);
