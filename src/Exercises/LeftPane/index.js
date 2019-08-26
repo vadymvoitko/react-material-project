@@ -7,14 +7,14 @@ import ListItem from "@material-ui/core/ListItem";
 import {DeleteForever, Edit} from "@material-ui/icons";
 import IconButton from "@material-ui/core/IconButton";
 import { context } from "../../__service__/context";
-import {resetExerciseById, setEditMode, setExercise, setExercises} from "../actionCreators";
+import {setEditMode, setExercise, setExercises} from "../actionCreators";
 
 export default ({ classes }) => {
   const { state, dispatch } = useContext(context);
-  const { exercises, editMode, exercise, muscles, category } = state.exercise;
+  const { exercises, exercise, musclesRange, category } = state.exercise;
 
   const getExercisesByMuscles = () => {
-    const groups = muscles.reduce((groups, muscle) => {
+    const groups = musclesRange.reduce((groups, muscle) => {
       groups[muscle] = [];
       return groups
     }, {})
@@ -26,7 +26,6 @@ export default ({ classes }) => {
         exercises[muscles] = exercises[muscles]
           ? [...exercises[muscles], exercise]
           : [exercise]
-        console.log('e', exercises);
         return exercises
       }, groups)
     )
@@ -41,8 +40,13 @@ export default ({ classes }) => {
   }
   const onDeleteExercise = id => {
     dispatch(setExercises(exercises.filter(ex => ex.id !== id)));
-    dispatch(setEditMode(exercise.id === id ? false : editMode));
-    dispatch(resetExerciseById(id));
+    if (exercise.id === id) {
+      dispatch(setEditMode(false)); // todo 1
+      dispatch(setExercise({
+        title: 'Welcome',
+        description: 'Please select the exercise from list on the left'
+      }));
+    }
   }
 
   return <Paper className={classes.paper}>

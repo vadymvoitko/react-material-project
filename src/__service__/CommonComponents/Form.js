@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {memo, useEffect, useState} from "react";
 import TextField from "@material-ui/core/TextField";
 import PropTypes from "prop-types";
 import {withStyles} from "@material-ui/core";
@@ -6,18 +6,15 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
-import { muscles } from "../storeValues";
 import Button from "@material-ui/core/Button";
 
-const useStyles = theme => ({
+const useStyles = () => ({
   root: {
     padding: 10
   },
   container: {
     display: 'flex',
     flexWrap: 'wrap',
-  },
-  textField: {
   },
   dense: {
     marginTop: 19,
@@ -27,100 +24,89 @@ const useStyles = theme => ({
     flexDirection: 'column',
     margin: 'auto'
   },
-  selectRoot: {
-  }
 });
 
-class Form extends Component {
-  state = {
-    ...this.getInitState(),
-    muscles,
+const Form = memo(({ classes, exercise, onSubmitExercise, onCloseForm, musclesRange }) => {
+  const getInitState = () => exercise || {
+    title: '',
+    description: '',
+    muscles: '',
   }
-
-  getInitState() {
-    const { exercise } = this.props;
-
-    return exercise ? {...exercise, muscle: exercise.muscles} : {
-      title: '',
-      description: '',
-      muscle: '',
-    }
-  }
-
-  onHandleInput = entity => ({ target: { value } }) => {
-    this.setState({
+  const [currentExercise, setCurrentExercise] = useState(getInitState());
+  console.log('rend', onCloseForm);
+  const { title, description, muscles } = currentExercise;
+  const onHandleInput = entity => ({ target: { value } }) => {
+    setCurrentExercise({
+      ...currentExercise,
       [entity]: value
     })
   }
-
-  onSubmitExercise = () => {
-    const { title, description, muscle, id } = this.state;
+  const onSubmitExerciseLocal = ev => {
+    ev.preventDefault();
+    const { title, description, muscles, id } = currentExercise;
     const ex = {
       id: id || title.toLowerCase().replace(/\s/g, '-'),
       title,
       description,
-      muscles: muscle
+      muscles
     }
-    this.props.onSubmitExercise(ex)
-    this.setState({ ...this.getInitState(),
-      muscles })
-    if (this.props.onCloseForm) this.props.onCloseForm()
+    onSubmitExercise(ex)
+    setCurrentExercise({ ...getInitState() })
+    if (onCloseForm) onCloseForm()
   }
-  render() {
-    const { classes, exercise } = this.props,
-      { title, description, muscles, muscle } = this.state
-    return <form className={classes.exerciseForm}>
-      <TextField
-        value={title}
-        required
-        label="title"
-        className={classes.textField}
-        margin="normal"
-        onChange={this.onHandleInput('title')}
-      />
-      <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="muscles"> Muscle Group </InputLabel>
-        <Select
-          classes={{root: classes.selectRoot}}
-          value={muscle}
-          onChange={this.onHandleInput('muscle')}
-          inputProps={{
-            name: 'muscles',
-            id: 'muscles',
-          }}
-        >
-          {
-            muscles.map((muscle) =>
-              <MenuItem
-                value={muscle}
-                key={muscle}
-              >{ muscle }</MenuItem>
-            )
-          }
-        </Select>
-      </FormControl>
-      <TextField
-        value={description}
-        label="description"
-        multiline
-        rows="4"
-        onChange={this.onHandleInput('description')}
-        className={classes.textField}
-        fullWidth={true}
-        margin="normal"
-      />
-      <br/>
-      <Button
-        color="primary"
-        type="submit"
-        onClick={this.onSubmitExercise}
-        disabled={!title || !muscles}
+
+  return <form className={classes.exerciseForm}>
+    <TextField
+      value={title}
+      required
+      label="title"
+      className={classes.textField}
+      margin="normal"
+      onChange={onHandleInput('title')}
+    />
+    <FormControl className={classes.formControl}>
+      <InputLabel htmlFor="muscles"> Muscle Group </InputLabel>
+      <Select
+        classes={{root: classes.selectRoot}}
+        value={muscles}
+        onChange={onHandleInput('muscles')}
+        inputProps={{
+          name: 'muscles',
+          id: 'muscles',
+        }}
       >
-        { exercise ? 'Edit' : 'Create' }
-      </Button>
-    </form>
-  }
-}
+        {
+          musclesRange.map((muscles) =>
+            <MenuItem
+              value={muscles}
+              key={muscles}
+            >{ muscles }</MenuItem>
+          )
+        }
+      </Select>
+    </FormControl>
+    <TextField
+      value={description}
+      label="description"
+      multiline
+      rows="4"
+      onChange={onHandleInput('description')}
+      className={classes.textField}
+      fullWidth={true}
+      margin="normal"
+    />
+    <br/>
+    <Button
+      color="primary"
+      type="submit"
+      onClick={onSubmitExerciseLocal}
+      disabled={!title || !musclesRange}
+    >
+      { exercise ? 'Edit' : 'Create' }
+    </Button>
+  </form>
+
+})
 
 Form.propTypes = {
   classes: PropTypes.object.isRequired,

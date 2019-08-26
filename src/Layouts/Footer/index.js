@@ -9,10 +9,10 @@ import {selectCategory} from "../../Exercises/actionCreators";
 export default withWidth()(
   () => {
     const { state, dispatch, width } = useContext(context);
-    const { category, muscles } = state.exercise;
+    const { category, musclesRange } = state.exercise;
 
     const index = category
-      ? muscles.findIndex(group => group === category) + 1
+      ? musclesRange.findIndex(group => group === category) + 1
       : 0
 
     const onIndexSelect = (e, index) =>
@@ -30,7 +30,7 @@ export default withWidth()(
       >
         <Tab label="All" />
         {
-          muscles.map(group =>
+          musclesRange.map(group =>
             <Tab key={group} label={group} />
           )
         }

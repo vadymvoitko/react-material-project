@@ -1,4 +1,4 @@
-export const muscles = [
+export const musclesRange = [
   'shoulders', 'chest', 'arms', 'back', 'legs'
 ]
 

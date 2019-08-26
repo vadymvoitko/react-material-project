@@ -1,13 +1,12 @@
 import {
   CREATE_EXERCISE,
-  RESET_EXERCISE_BY_ID,
   SELECT_CATEGORY,
   SET_EDIT_MODE,
   SET_EXERCISE,
   SET_EXERCISES
 } from "./constants";
 
-export const createExercise = payload => console.log(payload) || ({
+export const createExercise = payload => ({
   type: CREATE_EXERCISE,
   payload
 })
@@ -17,10 +16,6 @@ export const setExercise = payload => ({
 })
 export const setExercises = payload => ({
   type: SET_EXERCISES,
-  payload
-})
-export const resetExerciseById = payload => ({
-  type: RESET_EXERCISE_BY_ID,
   payload
 })
 export const setEditMode = payload => ({

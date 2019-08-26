@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, {useCallback, useContext} from 'react';
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -19,14 +19,21 @@ const useStyles = theme => ({
 });
 
 const CreateDialog = (classes) => {
-  const { state, dispatch } = useContext(context)
-  const { isDialogOpen } = state.layout;
+  const { state: {
+    layout: {
+      isDialogOpen
+    },
+    exercise: {
+      musclesRange
+    }
+  }, dispatch } = useContext(context);
   const onHandleToggle = () => {
     dispatch(setDialogOpen(!isDialogOpen))
   }
-  const onCloseForm = () => {
+  const onCloseForm = useCallback(() => {
     dispatch(setDialogOpen(false))
-  }
+  }, []);
+  const onSubmitExercise = useCallback((ev) => dispatch(createExercise(ev)), [])
   return <>
     <Fab
       color="secondary"
@@ -53,8 +60,9 @@ const CreateDialog = (classes) => {
           Please fill out the form below
         </DialogContentText>
         <Form
-          onSubmitExercise={(ev) => dispatch(createExercise(ev))}
+          onSubmitExercise={onSubmitExercise}
           onCloseForm={onCloseForm}
+          musclesRange={musclesRange}
         />
       </DialogContent>
     </Dialog>

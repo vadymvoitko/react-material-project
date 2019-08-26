@@ -1,6 +1,5 @@
 import {
   CREATE_EXERCISE,
-  RESET_EXERCISE_BY_ID,
   SELECT_CATEGORY,
   SET_EDIT_MODE,
   SET_EXERCISE,
@@ -25,16 +24,9 @@ const exercise = (state = {}, action) => {
       ...state,
       editMode: action.payload
     };
-    case RESET_EXERCISE_BY_ID: return {
-      ...state,
-      ...(exercise.id === action.payload ? { exercise: {
-          title: 'Welcome',
-          description: 'Please select the exercise from list on the left'
-        }} : {})
-    };
     case SELECT_CATEGORY: return {
       ...state,
-      category: state.muscles[action.payload - 1]
+      category: state.musclesRange[action.payload - 1]
     };
     default: return state;
   }
